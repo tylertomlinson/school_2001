@@ -23,4 +23,8 @@ class School
   def standard_student_names
     @student_names.map {|student_name| student_name.capitalize}
   end
+
+  def convert_end_time_to_clock_time
+  end_time.to_f 
+  end
 end
