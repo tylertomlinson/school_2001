@@ -3,7 +3,6 @@ require 'minitest/pride'
 require './lib/school'
 
 class SchoolTest < Minitest::Test
-  #Iteration 1 Tests:
   def test_it_exists
     school = School.new('9:00', 7)
 
@@ -30,7 +29,6 @@ class SchoolTest < Minitest::Test
     assert_equal [], school.student_names
   end
 
-  #Iteration 2 Tests:
   def test_it_can_add_student_names
     school = School.new('9:00', 7)
 
@@ -50,7 +48,7 @@ class SchoolTest < Minitest::Test
   end
 
   def test_school_is_full_time?
-      school = School.new('9:00', 7)
+    school = School.new('9:00', 7)
     assert true, school.is_full_time?
   end
 

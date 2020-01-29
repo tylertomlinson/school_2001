@@ -14,7 +14,6 @@ class School
 
   def end_time
     (@start_time.to_f + @hours_in_school_day).to_s
-
   end
 
   def is_full_time?
@@ -24,7 +23,4 @@ class School
   def standard_student_names
     @student_names.map {|student_name| student_name.capitalize}
   end
-
-
-
 end
